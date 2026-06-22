@@ -9,7 +9,10 @@ const nav = [
   { text: "Tổng quan", link: "/vi/", activeMatch: "^/vi/$" },
   { text: "Nghiên cứu", link: "/vi/research/", activeMatch: "^/vi/research/" },
   { text: "PRD", link: "/vi/prd/", activeMatch: "^/vi/prd/" },
+  { text: "Curriculum", link: "/vi/curriculum/", activeMatch: "^/vi/curriculum/" },
   { text: "Kiến trúc", link: "/vi/architecture/", activeMatch: "^/vi/architecture/" },
+  { text: "AI/Data", link: "/vi/ai-data/", activeMatch: "^/vi/ai-data/" },
+  { text: "Session Memory", link: "/vi/session-memory/", activeMatch: "^/vi/session-memory/" },
   { text: "MVP", link: "/vi/mvp/", activeMatch: "^/vi/mvp/" },
   { text: "Nghiệm thu", link: "/vi/acceptance/", activeMatch: "^/vi/acceptance/" }
 ];
@@ -18,8 +21,10 @@ const sidebarItems = [
   { text: "Tổng quan giải pháp", link: "/vi/" },
   { text: "Nghiên cứu insight phụ huynh", link: "/vi/research/" },
   { text: "PRD sản phẩm", link: "/vi/prd/" },
+  { text: "Giáo trình, chuẩn môn học và knowledge graph", link: "/vi/curriculum/" },
   { text: "Kiến trúc giải pháp", link: "/vi/architecture/" },
   { text: "AI, guardrails và dữ liệu", link: "/vi/ai-data/" },
+  { text: "Hành trình học, phản hồi và voice context", link: "/vi/session-memory/" },
   { text: "MVP và roadmap", link: "/vi/mvp/" },
   { text: "Bộ tiêu chí nghiệm thu", link: "/vi/acceptance/" }
 ];

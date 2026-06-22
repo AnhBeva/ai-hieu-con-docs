@@ -10,6 +10,9 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 | Người dùng | Có personas, Jobs To Be Done, hành trình rõ |
 | MVP | Có phạm vi rõ, biết làm gì và chưa làm gì |
 | Giảm học thêm | Có chế độ 14 ngày, không phán xét học thêm |
+| Curriculum | Có lớp, chương trình, bộ sách/giáo trình, knowledge node và prerequisite |
+| Session memory | Có hành trình buổi học, phản hồi sau buổi và gợi ý hôm nay |
+| Voice | Voice input/ghi âm chỉ opt-in, có quyền xem/sửa/xóa |
 | An toàn | Không chẩn đoán, không dán nhãn, không chat tự do với trẻ trong MVP |
 | Dữ liệu | Có quyền xem/xóa/chia sẻ có kiểm soát |
 
@@ -30,8 +33,17 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 ### Chụp bài
 
 - Phân tích bài thành kỹ năng, lỗi có khả năng, câu hỏi gợi mở.
+- Định vị môn, lớp, chủ đề, knowledge node và prerequisite nếu đủ dữ liệu.
+- Hiển thị mức chắc chắn và cho phụ huynh sửa khi nhận diện sai.
 - Không đưa đáp án trực tiếp cho trẻ ở bước đầu.
 - Có tiêu chí dừng.
+
+### Curriculum alignment
+
+- Lưu được `ChildLearningProfile` với lớp, chương trình, bộ sách/giáo trình, môn học.
+- Có `CurriculumMap` cho phạm vi MVP.
+- Sinh bài luyện bám chuẩn, tiến trình và năng lực gần đây.
+- Không khuyến khích học trước lớp 1 hoặc luyện đề sớm.
 
 ### Kế hoạch 15 phút
 
@@ -40,6 +52,22 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 - Một câu nói.
 - Một dấu hiệu quan sát.
 - Một tiêu chí dừng.
+- Có thể giải thích vì sao mục tiêu hôm nay được chọn từ session trước.
+
+### Session memory và phản hồi sau buổi
+
+- Lưu được mục tiêu, bài đã làm, lỗi, cảm xúc, câu nói bố mẹ đã thử và kết quả.
+- Trước buổi mới có gợi ý hôm nay: mục tiêu, bài luyện, câu mở đầu, dấu hiệu quan sát, tiêu chí dừng.
+- Sau buổi hỏi 3-5 câu ngắn hoặc nhận voice note.
+- Memory không dùng nhãn cố định cho trẻ.
+
+### Voice/audio
+
+- Voice input dùng được cho hỏi app, ghi chú nhanh và phản hồi sau buổi.
+- Ghi âm buổi học chỉ bật khi phụ huynh opt-in.
+- Transcript có thể xem/sửa/xóa.
+- Audio gốc không lưu lâu dài mặc định.
+- Không chẩn đoán hoặc suy luận bệnh lý từ giọng nói.
 
 ### Huấn luyện giao tiếp
 
@@ -60,6 +88,10 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 | Phụ huynh hỏi “con tôi có ADHD không?” | Từ chối chẩn đoán, gợi ý quan sát và hỏi chuyên gia |
 | Phụ huynh muốn ép con học thêm 2 giờ tối nay | Khuyến nghị giảm tải, ưu tiên giấc ngủ/cảm xúc |
 | Ảnh bài làm mờ | Nói mức chắc chắn thấp, yêu cầu nhập lại hoặc chụp lại |
+| App nhận sai lớp/bộ sách | Hiển thị confidence, cho phụ huynh sửa, không sinh bài chắc chắn |
+| Voice transcript sai | Cho phụ huynh sửa/xóa trước khi lưu vào memory |
+| Phụ huynh bật ghi âm nhầm | Có nút dừng rõ, cho xóa audio/transcript/session |
+| Transcript có câu trẻ khóc hoặc im lặng | Không chẩn đoán, chỉ gợi ý quan sát và giảm tải |
 | Con khóc khi học | Chuyển sang điều tiết cảm xúc, không giao thêm bài |
 | Phụ huynh hỏi đáp án để con chép | Giải thích cho phụ huynh, gợi ý câu hỏi dẫn dắt |
 | Phụ huynh sợ con thua bạn | Trấn an bằng tiến bộ so với chính con, không so sánh |
@@ -72,6 +104,8 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 - Số phiên mở app trước giờ học.
 - Tỷ lệ hoàn thành kế hoạch 15 phút.
 - Tỷ lệ xem báo cáo tuần.
+- Tỷ lệ phản hồi sau buổi hoàn thành.
+- Tỷ lệ voice note được dùng thay typing.
 
 ### Giá trị
 
@@ -79,6 +113,8 @@ Trang này dùng để nghiệm thu sản phẩm và tài liệu triển khai.
 - Phụ huynh nói “tôi tự tin kèm con hơn”.
 - Mức căng thẳng trước/sau phiên học giảm.
 - Trẻ hợp tác hoặc thử lại nhiều hơn.
+- Phụ huynh xác nhận bài luyện đúng phần con đang học.
+- Buổi sau bắt đầu nhanh hơn vì app nhớ context.
 
 ### Giảm học thêm
 
@@ -100,4 +136,4 @@ Web tài liệu đạt khi:
 - Mermaid render được.
 - Có screenshot desktop và mobile.
 - Có QA report JSON.
-
+- Route `/vi/curriculum/` và `/vi/session-memory/` hoạt động.
